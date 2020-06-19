@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider test</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        // 기본적인 사용법
+        $(document).ready(function(){
+            $('.slider').bxSlider();
+
+            $('.slider2').bxSlider();
+
+            $('.slider3').bxSlider({
+            auto: true, // 순서대로 이미지 전환이 자동으로 변경
+            speed: 500, //이미지 전환 속도 1/1000초 기준, 1000이 1초 
+            pause: 4000, // 이미지가 전환된 후 잠시 움직임을 고정하는 시간
+            mode: "fade", //이미지가 전환되는 효과, 'fade', 'horizontal', vertical 3가지가 존재함
+            autoControls: true, //이미지 전환 효과 버튼 출력
+            pager: true //이미지 전환 인디케이터 사용
+        });
+        });
+
+        // bxslider 2개 이상 사용하기
+        // 슬라이더를 사용할 클래스의 이름을 바꿔서 추가해서 사용하면 됨
+
+        // bxslider의 기능 옵션
+        $('.slider3').bxSlider({
+            auto: true, // 순서대로 이미지 전환이 자동으로 변경
+            speed: 500, //이미지 전환 속도 1/1000초 기준, 1000이 1초 
+            pause: 4000, // 이미지가 전환된 후 잠시 움직임을 고정하는 시간
+            mode: "fade", //이미지가 전환되는 효과, 'fade', 'horizontal', vertical 3가지가 존재함
+            autoControls: true, //이미지 전환 효과 버튼 출력
+            pager: true //이미지 전환 인디케이터 사용
+        });
+        
+
+
+    </script>
+
+    <style>
+        li > img {
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <ul class="slider">
+            <li>
+                <img src="./images/peng4.jpg" alt="">
+            </li>
+            <li>
+                <img src="./images/peng3.jpg" alt="">
+            </li>
+            <li>
+                <img src="./images/pic1/peng5.jpg" alt="">
+            </li>
+            <li>
+                <img src="./images/pic1/peng7.jpg" alt="">
+            </li>
+        </ul>
+
+        <ul class="slider2">
+            <li>
+                <img src="./images/pic2/peng8.jpg" alt="">
+            </li>
+            <li>
+                <img src="./images/pic2/peng9.jpg" alt="">
+            </li>
+        </ul>
+
+        <br>
+
+        <ul class="slider3">
+            <li>
+                <img src="./images/pic2/peng8.jpg" alt="">
+            </li>
+            <li>
+                <img src="./images/pic2/peng9.jpg" alt="">
+            </li>
+            <li>
+                <img src="./images/pic1/peng5.jpg" alt="">
+            </li>
+            <li>
+                <img src="./images/pic1/peng7.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+    
+
+    <!-- ul,li 태그 대신 div도 가능 -->
+</body>
+</html>

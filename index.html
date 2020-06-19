@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout9</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+            auto: true, // 순서대로 이미지 전환이 자동으로 변경
+            speed: 500, //이미지 전환 속도 1/1000초 기준, 1000이 1초 
+            pause: 4000, // 이미지가 전환된 후 잠시 움직임을 고정하는 시간
+            mode: "fade", //이미지가 전환되는 효과, 'fade', 'horizontal', vertical 3가지가 존재함
+            // autoControls: true, //이미지 전환 효과 버튼 출력
+            // pager: true //이미지 전환 인디케이터 사용
+        });
+        });
+    </script>
+<body>
+    <nav>
+        <div class="nav">
+            <a href="#" class="a">HOME</a>
+            <a href="" class="a">BAND</a>
+            <a href="" class="a">TOUR</a>
+            <a href="" class="a">CONTACT</a>
+            <div class="dropdown">
+                <button class="dropbtn">MORE
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Merchandise</a>
+                    <a href="#">Extras</a>
+                    <a href="#">Media</a>
+                </div>
+            </div>
+            <div class="search">
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
+    </nav>
+    <br><br><br><br><br>
+    <main>
+        <section>
+            <div class="slider">
+            <div>
+                <img src="./layout9_images/chicago.jpg" alt="" width="100%">
+                <h1>Chicago</h1>
+                <p>Thank you, Chicago - A night we won't forget.</p>
+            </div>
+            <div>
+                <img src="./layout9_images/la.jpg" alt="" width="100%">
+                <h1>Los Angeles</h1>
+                <p>We had the best time playing at Venice Beach!</p>
+            </div>
+            <div>
+                <img src="./layout9_images/ny.jpg" alt="" width="100%">
+                <h1>New York</h1>
+                <p>The atmosphere in New York is lorem ipsum.</p>
+            </div>                
+            </div>
+
+        </section>
+
+        <section>
+            <div class="band" style="width: 960px;">
+                <div>
+                    <h1>THE BAND</h1>
+                    <h3>We love music</h3>
+                    <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>  
+                <div class="name">
+                    <div style="width: 300px;">
+                        <p>Name</p>
+                        <img src="./layout9_images/bandmember.jpg" alt="" width="153" height="153">
+                    </div>
+                    <div style="width: 300px;">
+                        <p>Name</p>
+                        <img src="./layout9_images/bandmember.jpg" alt="" width="153" height="153">
+                    </div>
+                    <div style="width: 300px;">
+                        <p>Name</p>
+                        <img src="./layout9_images/bandmember.jpg" alt="" width="153" height="153">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h1>TOUR DATES</h1>
+                <p>Remember to book your tickets!</p>                
+            </div>
+            <div>
+                <li>September<span>Sold out</span></li>
+                <li>September<span>Sold out</span></li>
+                <li>September<span>3</span></li>
+            </div>  
+            <div>
+                <div>
+                    <img src="./layout9_images/newyork.jpg" alt="">
+                    <h3>New York</h3>
+                    <p>Fri 27 Nov 2016</p>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button>But Tickets</button>
+                </div>
+                <div>
+                    <img src="./layout9_images/paris.jpg" alt="">
+                    <h3>Paris</h3>
+                    <p>Sat 28 Nov 2016</p>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button>But Tickets</button>
+                </div>
+                <div>
+                    <img src="./layout9_images/sanfran.jpg" alt="">
+                    <h3>San Francisco</h3>
+                    <p>Sun 29 Nov 2016</p>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button>But Tickets</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h1>CONTACT</h1>
+            <p>Fan? Drop a note!</p>
+            <div>
+                <div>
+                    <i class="fa fa-phone">Chicago, US</i>
+                    <i class="fa fa-map-marker">Phone: +00 151515</i>
+                    <i class="fa fa-envelope">Email: mail@mail.com</i>                    
+                </div>
+                <div>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Message">
+                    <button>SEND</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <img src="./layout9_images/map.jpg" alt="">
+        </section>
+    </main>
+    
+    <footer>
+        <div>
+            <i class="fa fa-facebook-official"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-snapchat-square"></i>
+            <i class="fa fa-pinterest-p"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"></a></p>
+    </footer>
+</body>
+</html>
